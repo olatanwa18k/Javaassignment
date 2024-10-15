@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS background</title>
+		<style type="text/css">
+			body{
+				color:white;
+				border:none;
+				padding:0px;
+				margin:0px;
+			}
+			h1{
+				font-family:arial, sans-serif;
+				color:white;
+				font-size:40px;
+				margin:8px;
+			}
+		.outer{
+			height:650px;
+			background-image:url('banner.jpg');
+			background-size:cover;
+			padding-left:150px;
+			padding-bottom:2px;
+			padding-top:16px;
+		}
+		.page1{
+			padding:20px;	
+		}
+		.inner{
+			padding-right:50px;
+			color:white;
+		}
+		ul{
+			display:flex;
+			justify-content:right;
+			align-items:right;
+		}
+		.last{ 
+			display:flex;
+			flex-direction:rows;
+			justify-content:space-around;
+			padding-top:8px;
+			padding-right:30px;
+			}
+		.blog{
+			height:300px;
+			width:500px;
+			background:none;
+			margin-top:100px;
+			padding-top:50px;
+			margin-bottom:50px;
+		}
+		.blo{
+			height:380px;
+			width:300px;
+			background:white;
+			margin-top:100px;
+			margin-right:150px;
+			display:flex;
+			flex-direction:column;
+			justify-content:space-around;
+			align-items:center;
+		}
+		ul li{
+			text-transform:capitalize;
+			list-style-type:none;
+		
+		 padding-top:2px;
+		}
+		.one{
+			width:250px;
+			height:50px;
+			margin:4px;
+			background-color:lightgrey;
+			
+		}
+		#heading{
+			font-size:36px;
+			font-family:candara, sans-serif;
+		}
+		p{
+			font-family:calibri;
+			font-size:20px;
+		}
+		button{
+			padding:15px;
+		}
+		h4{
+			color:black;
+			align:center;
+		}
+		#moat{
+			background-color:#d90000;
+			text-align:center;
+			padding-top:6px;
+		}
+		a{
+			color:white;
+			text-decoration:none;
+		}
+		#last{color:red;}
+		label, span{
+			color:black;
+		}
+		label,input,button,select{border:none;}
+
+	
+		</style>
+	</head>
+	<body>
+		<div class="outer">
+			<div>
+				<ul class="page1">
+					<li class="inner"><a href="">Home</a></li>
+					<li class="inner"><a href="">About Us</a></li>
+					<li class="inner"><a href="">Service</a></li>
+					<li class="inner"><a href="">Stats</a></li>
+					<li class="inner"><a href="">Testimonials</a></li>
+					<li class="inner"><a href="">Suscribe</a></li>
+				</ul>
+			</div>	
+				<div class="last">
+					<div class="blog">
+						<h1>Matrimonial Search.</h1>
+						<h2 id="heading">Best Matching Couples</h2>
+						<p>Onec Consequent Sapien Ut Leo Cursus Rhancus. Nulian dui,
+						Mi,valpute ac metus semper nullam dul mi vestibulum ante morbi at dui nisi.</p>
+						<button>Read More</button>
+					</div>
+					<div class="blo">
+						<h4>Register and join our matrimony</h4>
+					
+						
+						<div class="one">
+							<form action="done.html" method="post">
+								<label for="name">Name</label>
+								<input type="text" name="Name" id="name" required>
+							
+						</div>
+						<div class="one">
+							
+								<label for="mail">Email</label>
+								<input type="email" name="Email" id="mail" required>
+							
+						</div>
+						<div class="one">
+							
+								<label for="contact">Phone</label>
+								<input type="tel" name="Number" id="contact" required>
+							
+						</div>
+						<div class="one">
+							
+								<label>Gender</label>
+								<span>Male</span><input type="radio" name="sex" id="male">
+								<span>Female</span><input type="radio" name="sex" id="female">
+							
+						</div>
+						<div class="one">
+							<label>State of origin</label>
+								<select name="state"id="state" required>
+									<option value="lag">Lagos State</option>
+									<option value="ogun">Ogun  State</option>
+									<option value="oyo">Oyo  State</option>
+									<option value="anabra">Anambra  State</option>
+								</select>
+							<div class="one">
+							<button>Submit</button>
+							</div>
+						</div>
+						<div class="one" id="moat"><a href="">Get Started</a></div>
+						</form>
+					<h4>By registering, you agree to<br><a href="" id="last">our terms and conditions.</a></h4>
+					</div>
+				</div>
+		</div>
+	
+	</body>
+</html>
